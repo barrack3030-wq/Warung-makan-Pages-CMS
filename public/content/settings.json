@@ -1,0 +1,15 @@
+{
+  "businessName": "Rasa Nusantara",
+  "tagline": "Cita Rasa Autentik Warisan Leluhur",
+  "description": "Menyajikan hidangan tradisional Indonesia dengan resep rahasia keluarga menggunakan bahan-bahan segar berkualitas tinggi.",
+  "whatsapp": "6281234567890",
+  "address": "Jl. Kuliner Lezat No. 88, Jakarta Selatan",
+  "instagram": "@rasanusantara.id",
+  "openHours": "Senin - Minggu: 10:00 - 22:00",
+  "heroImage": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2070&auto=format&fit=crop",
+  "heroSlider": [
+    { "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2070&auto=format&fit=crop" },
+    { "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=2070&auto=format&fit=crop" },
+    { "image": "https://images.unsplash.com/photo-1544025162-83115437ee32?q=80&w=2070&auto=format&fit=crop" }
+  ]
+}

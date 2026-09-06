@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Master Template UMKM Kuliner</title>
+    <meta name="description" content="Template website profesional untuk UMKM Kuliner." />
+    
+    <!-- Google Fonts: Playfair Display & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- Initial Loader -->
+    <div class="loader-overlay" id="loader">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="nav-brand">
+          <h2 data-cms="businessName">Nama Bisnis</h2>
+        </a>
+        <div class="nav-right" style="display: flex; align-items: center; gap: 24px;">
+          <ul class="nav-menu">
+            <li><a href="#hero" class="nav-link" data-i18n="nav_home">Beranda</a></li>
+            <li><a href="#about" class="nav-link" data-i18n="nav_about">Tentang</a></li>
+            <li><a href="#menu" class="nav-link" data-i18n="nav_menu">Menu</a></li>
+            <li><a href="#gallery" class="nav-link" data-i18n="nav_gallery">Galeri</a></li>
+            <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Kontak</a></li>
+          </ul>
+          <div class="lang-switcher">
+            <button class="lang-btn active" data-lang="id">ID</button>
+            <span>|</span>
+            <button class="lang-btn" data-lang="en">EN</button>
+          </div>
+          <div class="mobile-toggle">&#9776;</div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero">
+      <div id="hero-slider" class="hero-slider"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h1 data-cms="businessName">Nama Bisnis</h1>
+          <p data-cms="tagline">Tagline bisnis kuliner akan tampil di sini.</p>
+          <div class="hero-buttons">
+            <a href="#menu" class="btn btn-primary" data-i18n="btn_view_menu">Lihat Menu</a>
+            <a href="#" class="btn btn-outline wa-general-btn" target="_blank" data-i18n="btn_order_now">Pesan Sekarang</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="about_title">Tentang Kami</h2>
+          <p data-cms="description">Cerita dan deskripsi singkat mengenai usaha kuliner ini.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section" style="background-color: #fff;">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="menu_title">Menu Pilihan</h2>
+          <p data-i18n="menu_subtitle">Jelajahi hidangan lezat dan minuman segar kami yang disiapkan khusus untuk Anda.</p>
+        </div>
+        
+        <div id="menu-filters" class="menu-filters">
+          <!-- Filters loaded via JS -->
+        </div>
+        
+        <div id="menu-container" class="menu-grid">
+          <!-- Menu Items loaded via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="gallery_title">Galeri</h2>
+          <p data-i18n="gallery_subtitle">Momen spesial dan hidangan favorit pelanggan kami.</p>
+        </div>
+        
+        <div id="gallery-container" class="gallery-grid">
+          <!-- Gallery Items loaded via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3 data-cms="businessName">Nama Bisnis</h3>
+            <p data-cms="description">Deskripsi singkat bisnis Anda.</p>
+          </div>
+          <div class="footer-col">
+            <h3 data-i18n="footer_contact">Hubungi Kami</h3>
+            <p><strong>WhatsApp:</strong> <span data-cms="whatsapp">-</span></p>
+            <p><strong>Instagram:</strong> <span data-cms="instagram">-</span></p>
+            <p><strong data-i18n="footer_open_hours">Jam Buka:</strong> <span data-cms="openHours">-</span></p>
+          </div>
+          <div class="footer-col">
+            <h3 data-i18n="footer_address">Alamat</h3>
+            <p data-cms="address">Alamat lengkap bisnis akan tampil di sini.</p>
+            <div style="margin-top: 20px;">
+              <a href="#" class="btn btn-primary wa-general-btn" target="_blank" data-i18n="btn_wa">Hubungi via WhatsApp</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 <span data-cms="businessName">Bisnis Kuliner</span>. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>
+

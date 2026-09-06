@@ -1,0 +1,144 @@
+media:
+  input: public/images
+  output: /images
+
+content:
+  - name: settings
+    label: Site Settings
+    type: file
+    file: public/content/settings.json
+    format: json
+    fields:
+      - name: businessName
+        label: Nama Bisnis
+        type: string
+      - name: tagline
+        label: Tagline
+        type: string
+      - name: description
+        label: Deskripsi Singkat
+        type: text
+      - name: whatsapp
+        label: Nomor WhatsApp (Format: 628123456789)
+        type: string
+      - name: address
+        label: Alamat
+        type: string
+      - name: instagram
+        label: Username Instagram
+        type: string
+      - name: openHours
+        label: Jam Buka
+        type: string
+      - name: heroImage
+        label: Gambar Hero (Fallback)
+        type: image
+      - name: heroSlider
+        label: Gambar Slider Hero
+        type: object
+        list: true
+        fields:
+          - name: image
+            label: Gambar
+            type: image
+
+  - name: menu
+    label: Menu Kuliner
+    type: file
+    file: public/content/menu.json
+    format: json
+    fields:
+      - name: items
+        label: Daftar Menu
+        type: object
+        list: true
+        fields:
+          - name: name
+            label: Nama Produk
+            type: string
+          - name: description
+            label: Deskripsi
+            type: text
+          - name: price
+            label: Harga
+            type: number
+          - name: category
+            label: Kategori
+            type: string
+            options:
+              - Makanan
+              - Minuman
+              - Snack
+              - Paket
+          - name: image
+            label: Foto Produk
+            type: image
+          - name: isAvailable
+            label: Tersedia?
+            type: boolean
+          - name: isFeatured
+            label: Menu Unggulan?
+            type: boolean
+          - name: promoLabel
+            label: Label Promo (Opsional)
+            type: string
+
+  - name: gallery
+    label: Galeri Foto
+    type: file
+    file: public/content/gallery.json
+    format: json
+    fields:
+      - name: photos
+        label: Foto Galeri
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Judul
+            type: string
+          - name: description
+            label: Deskripsi
+            type: text
+          - name: image
+            label: Foto
+            type: image
+
+  - name: blog
+    label: Blog / Artikel
+    type: file
+    file: public/content/blog.json
+    format: json
+    fields:
+      - name: posts
+        label: Daftar Artikel
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Judul Artikel
+            type: string
+          - name: slug
+            label: URL Slug
+            type: string
+          - name: date
+            label: Tanggal
+            type: date
+          - name: author
+            label: Penulis
+            type: string
+          - name: summary
+            label: Ringkasan
+            type: text
+          - name: content
+            label: Isi Artikel
+            type: text
+          - name: image
+            label: Featured Image
+            type: image
+          - name: seoTitle
+            label: SEO Title
+            type: string
+          - name: seoDescription
+            label: SEO Description
+            type: text

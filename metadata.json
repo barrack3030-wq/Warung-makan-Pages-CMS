@@ -1,0 +1,6 @@
+{
+  "name": "Master Template UMKM Kuliner",
+  "description": "Template website profesional untuk bisnis kuliner UMKM menggunakan HTML, CSS, Vanilla JS, dan terintegrasi dengan Pages CMS.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
